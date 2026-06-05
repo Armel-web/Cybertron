@@ -1,0 +1,107 @@
+{
+  "intents": [
+    {
+      "tag": "salutations",
+      "patterns": [
+        "bonjour", "salut", "hello", "bonsoir", "hey", "il y a quelqu'un", 
+        "bonjour cybertron", "assistance", "aide-moi", "dispo", "rebonjour"
+      ],
+      "responses": [
+        "Bonjour ! Je suis Cybertron, votre cellule d'alerte cyber. Quel incident ou message suspect souhaitez-vous analyser ?",
+        "Identité confirmée. Assistant Cybertron opérationnel. De quelle menace voulez-vous vous protéger aujourd'hui ?"
+      ]
+    },
+    {
+      "tag": "phishing",
+      "patterns": [
+        "recu un email demandant mon mot de passe", 
+        "on me demande mes identifiants par mail", 
+        "cliquer sur un lien pour changer de mot de passe", 
+        "mail de ma banque qui demande mes codes",
+        "lien suspect dans un message",
+        "sms d'ameli ou de la caf avec un lien de remboursement",
+        "email de Chronopost qui demande de payer une taxe de douane",
+        "on me demande ma carte bleue pour débloquer un colis",
+        "j'ai reçu une alerte de sécurité par mail avec un bouton",
+        "un message me demande de mettre à jour mes coordonnées immédiatement",
+        "mail suspect de mon patron qui demande un virement urgent",
+        "faux site de la banque",
+        "on me menace de suspendre mon compte si je ne clique pas"
+      ],
+      "responses": [
+        "🚨 Alerte : Tentative d'ingénierie sociale détectée (Phishing / Hameçonnage). Ne cliquez sur aucun lien, ne téléchargez aucune pièce jointe et ne saisissez jamais vos identifiants. Supprimez immédiatement ce message.",
+        "⚠️ Vecteur d'attaque : Phishing détecté. Les institutions officielles ou banques ne vous demanderont jamais d'informations confidentielles ou bancaires par e-mail ou SMS. Signalez-le sur Signal-Spam ou Pharos."
+      ]
+    },
+    {
+      "tag": "ransomware",
+      "patterns": [
+        "mes fichiers sont bloques", 
+        "ordinateur crypte", 
+        "on me demande de payer une rancon en bitcoin", 
+        "ecran rouge bloque",
+        "virus qui bloque mon pc",
+        "mes documents ont une extension bizarre",
+        "un message me dit que mes données sont prises en otage",
+        "plus acces a mes dossiers",
+        "mon disque dur est verrouille",
+        "attaqué par un ranconlogiciel",
+        "tous mes fichiers professionnels sont inaccessibles"
+      ],
+      "responses": [
+        "🛑 URGENCE CYBER : Attaque par Ransomware (Rançongiciel) confirmée. Étape 1 : Déconnectez immédiatement la machine du réseau (coupez le Wi-Fi, débranchez le câble Ethernet). Étape 2 : Ne payez jamais la rançon. Étape 3 : Restaurez via vos sauvegardes hors-ligne."
+      ]
+    },
+    {
+      "tag": "mot_de_passe_faible",
+      "patterns": [
+        "mon mot de passe est azerty", 
+        "comment securiser mon compte", 
+        "mot de passe facile", 
+        "changer de mot de passe",
+        "je mets le même mot de passe partout",
+        "recommandation mot de passe",
+        "comment fabriquer un bon mot de passe",
+        "mot de passe robuste",
+        "generer un mot de passe",
+        "ma politique de mot de passe"
+      ],
+      "responses": [
+        "🔒 Recommandation ANSSI : Utilisez une politique de mots de passe forts (minimum 12 caractères combinant majuscules, minuscules, chiffres, caractères spéciaux). Utilisez un gestionnaire de mots de passe (KeePass, Bitwarden) et ne réutilisez jamais le même secret."
+      ]
+    },
+    {
+      "tag": "malware",
+      "patterns": [
+        "mon pc est tres lent",
+        "des fenetres publicitaires s'ouvrent toutes seules",
+        "j'ai telecharge un logiciel crache et mon pc bug",
+        "ordinateur infecte par un virus",
+        "mon antivirus detecte un trojan",
+        "cheval de troie",
+        "un spyware m'espionne",
+        "mon ecran clignote et des programmes se lancent",
+        "j'ai un virus"
+      ],
+      "responses": [
+        "Arnaque ou logiciel malveillant (Malware/Trojan) suspecté. Lancez immédiatement une analyse complète (Scan) avec un antivirus à jour (ex: Windows Defender ou Malwarebytes). Évitez les téléchargements illégaux (cracks) qui sont les premiers vecteurs d'infection."
+      ]
+    },
+    {
+      "tag": "fuite_donnees",
+      "patterns": [
+        "mes donnees sont sur internet",
+        "mon adresse mail a ete piratee",
+        "fuite de donnees",
+        "data breach",
+        "j'ai vu mes mots de passe sur le dark web",
+        "mes informations personnelles ont fuite",
+        "site piratage verification",
+        "comment savoir si je suis pirate"
+      ],
+      "responses": [
+        "Incident de type Data Breach (Fuite de données). Allez sur le site de référence 'Have I Been Pwned' pour vérifier si vos identifiants circulent publiquement. Si c'est le cas, changez immédiatement le mot de passe du site concerné ainsi que ceux de vos autres comptes s'ils étaient identiques."
+      ]
+    }
+  ]
+}
