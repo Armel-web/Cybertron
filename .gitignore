@@ -1,2 +1,13 @@
-# L'environnement virtuel Python
+# Environnement virtuel local
 venv/
+.venv/
+env/
+
+# Caches Python et Streamlit
+__pycache__/
+.streamlit/config.toml
+src/__pycache__/
+
+# Fichiers système ou utilisateur sensibles
+.env
+*.pyc
